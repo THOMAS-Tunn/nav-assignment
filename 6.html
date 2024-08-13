@@ -1,74 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="6.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="6.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>Document</title>
-</head>
-<body style=" overflow: hidden;width:fit-content; height: 1060px; background-color: black;">
-    <header style="background-color: yellow; height: 13rem; width: 1900px; border-bottom: 10px solid black;">
-        <nav>
-            <a href="#home" class="button" id="button-logo">Logo</a>
-            <ul class="navlist">
-                <li class="navitems">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="navitems">
-                    <a href="#about">About</a>
-                </li>
-                <li class="navitems">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-            <a href="#logout" class="button" id="button-logout">Logout</a>
-        </nav>
+  </head>
+  <body
+    style="
+      overflow: hidden;
+      width: fit-content;
+      height: 1060px;
+      background-color: black;
+    "
+  >
+    <header
+      style="
+        background-color: yellow;
+        height: 13rem;
+        width: 1900px;
+        border-bottom: 10px solid black;
+      "
+    >
+      <nav>
+        <a href="#home" class="button" id="button-logo">Logo</a>
+        <ul class="navlist">
+          <li class="navitems">
+            <a href="#home">Home</a>
+          </li>
+          <li class="navitems">
+            <a href="#about">About</a>
+          </li>
+          <li class="navitems">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <a href="#logout" class="button" id="button-logout">Logout</a>
+      </nav>
     </header>
     <main>
-        <input type="checkbox" id="mainmenucontrol" style="display: none;">
-        <article class="grinpart" id="grinpart">
-            <ul class="menu">
-                <li style="margin-left: -5rem;"><label for="mainmenucontrol"><p style="font-weight: bold;">Main menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bars"></i></p></label></li>
-                <li><p>Main menu 1</p></li>
-                <li><p>Menu item 2</p></li>
-                <li><p>Menu item 2</p></li>
-                <li><p>Menu item 3</p></li>
-                <li><p>Menu item 4</p></li>
-            </ul>
-        </article>
-        <section class="midpart">
-            <section style="margin-left: 1rem; font-size:30px; font-family:'Times New Roman'; margin-top:0; ">
-                    <h1 class="maintext">My Todo items:</h1>
-                    <b>List of avaiable courses</b>
-                        <ul style="list-style-type: disc;">
-                            <li>Data Structures & Algorithm</li>
-                            <li>Web Technology</li>
-                            <li>Appitude & Logical Reasoning</li>
-                            <li>Programing Languages</li>
-                        </ul>
-                    <b>Data structures topics</b>
-                    <ol>
-                                <li>Array</li>
-                                <li>Linked List</li>
-                                <li>Stacks</li>
-                                <li>Queues</li>
-                                <li>Trees</li>
-                                <li>Graphs</li>
-                    </ol>
-            </section>
+      <input type="checkbox" id="mainmenucontrol" style="display: none" />
+      <article class="grinpart" id="grinpart">
+        <ul class="menu">
+          <li style="margin-left: -5rem">
+            <label for="mainmenucontrol"
+              ><p style="font-weight: bold">
+                Main menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-bars"
+                ></i></p
+            ></label>
+          </li>
+          <li><p>Main menu 1</p></li>
+          <li><p>Menu item 2</p></li>
+          <li><p>Menu item 2</p></li>
+          <li><p>Menu item 3</p></li>
+          <li><p>Menu item 4</p></li>
+        </ul>
+      </article>
+      <section class="midpart">
+        <section
+          style="
+            margin-left: 1rem;
+            font-size: 30px;
+            font-family: 'Times New Roman';
+            margin-top: 0;
+          "
+        >
+          <h1 class="maintext">My Todo items:</h1>
+          <b>List of avaiable courses</b>
+          <ul style="list-style-type: disc">
+            <li>Data Structures & Algorithm</li>
+            <li>Web Technology</li>
+            <li>Appitude & Logical Reasoning</li>
+            <li>Programing Languages</li>
+          </ul>
+          <b>Data structures topics</b>
+          <ol>
+            <li>Array</li>
+            <li>Linked List</li>
+            <li>Stacks</li>
+            <li>Queues</li>
+            <li>Trees</li>
+            <li>Graphs</li>
+          </ol>
         </section>
-        <aside class="purpart">
-            <ul class="menu" id="menu-secondary" >
-                <li><p style="font-weight: bold;">secondary menu</p></li>
-                <li><p>Menu item 1</p></li>
-                <li><p>Menu item 2</p></li>
-                <li><p>Menu item 3</p></li>
-            </ul>
-        </aside>
+      </section>
+      <aside class="purpart">
+        <ul class="menu" id="menu-secondary">
+          <li><p style="font-weight: bold">secondary menu</p></li>
+          <li><p>Menu item 1</p></li>
+          <li><p>Menu item 2</p></li>
+          <li><p>Menu item 3</p></li>
+        </ul>
+      </aside>
     </main>
     <footer class="bluepart">
-        <b style="font-size: 50px; position: relative; left:calc(1900px/2.4); top: 30%;">&copy copyright</b>
+      <b
+        style="
+          font-size: 50px;
+          position: relative;
+          left: calc(1900px / 2.4);
+          top: 30%;
+        "
+        >&copy copyright</b
+      >
     </footer>
-</body>
+  </body>
 </html>
