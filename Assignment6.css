@@ -1,0 +1,109 @@
+a {
+    text-decoration: none;
+}
+.button{
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    padding: 0;
+    margin: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5rem;
+}
+.button:hover{
+    border: 5px solid black;
+}
+.logo{
+    color: coral;
+    margin-left:5rem;
+}
+.logout{
+    color: red;
+    margin-left: 100rem;
+}
+.nav-list{
+    list-style-type: none;
+    margin-top: 4.5rem ;
+    margin-left: 800px;
+    padding: 0;
+    position: absolute;
+    font-size: 40px;
+}
+.nav-items{
+    padding: 1rem;
+    float: left;
+}
+.nav-items:hover{
+    border: 5px solid black;
+}
+
+.nav-list a{
+    color:black;
+}
+.menu{
+    position: absolute;
+    margin-top:0;
+    list-style-type: none;
+    font-size: 2rem;
+    width: 30rem;
+    padding: 0;
+    border: 1px dashed red;
+}
+.menu li{
+    border-bottom: 10px solid black;
+    margin-top: -10px;
+    border-width: 100%;
+    text-align: center;
+    margin-left: -10rem;
+}
+.secondary{
+    right: 0rem;
+}
+.main-menu{
+    background-color: green;
+    height: 42rem;
+    width: 30rem; 
+    display: inline-block; 
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 0;
+}
+#main-menu-control:checked ~ .main-menu{
+    left:-18rem;
+}
+#main-menu-control:checked ~ .main-section{
+    width: calc(56.9rem + 19rem - 8px);
+    left:-18rem;
+}
+.secondary-menu{
+    background-color: purple;
+    height: 42rem;
+    width: 30rem;
+    display: inline-block;
+    margin-left: calc(56rem + 30rem + 40px);
+    position: absolute;
+}
+.main-section{
+    background-color: whitesmoke; 
+    height: 42rem; 
+    width: 56.9rem; 
+    margin-left: calc(30rem + 18px); 
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    float: left;
+    scroll-snap-type: mandatory;
+    z-index: 5;
+}
+h1.main-text{
+    font-size: 50px; 
+    margin-left: 1rem; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer.copy-right{
+    background-color: blue; 
+    height: 10rem; 
+    width: 1900px;
+    position: absolute;
+    margin-top: calc(10px + 42rem);
+}
