@@ -1,109 +1,140 @@
-a {
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 20vh;
+    background-color: yellow;
+    position: relative;
+    top:0;
+    left: 0;
+    border: 10px solid black;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
     text-decoration: none;
 }
-.button{
-    font-weight: bold;
-    font-size: 50px;
-    position: absolute;
+.main-nav{
+    list-style-type: none;
+    display: inline-flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     padding: 0;
-    margin: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 5rem;
+}
+.main-nav a{
+    color: black;
+    margin-left: 10px;
+    font-size: 50px;
+    padding: 10px;
+    border: 5px solid transparent;
+}
+.main-nav a:hover{
+    border: 5px solid black;
+}
+.button{
+    font-size: 50px;
+    border: 5px solid transparent;
+    display: inline;
+    background-color: transparent;
+    translate: -50%;
 }
 .button:hover{
     border: 5px solid black;
 }
 .logo{
-    color: coral;
-    margin-left:5rem;
+    left: 7%;
+    position: absolute;
 }
 .logout{
+    right: 0;
+    position: absolute;   
+}
+.logo a{
+    color: coral;
+}
+.logout a{
     color: red;
-    margin-left: 100rem;
 }
-.nav-list{
-    list-style-type: none;
-    margin-top: 4.5rem ;
-    margin-left: 800px;
+main{
+    height: 60vh;
+    width: calc(100% - 20px);
+    background-color: #252625;
     padding: 0;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+    display: inline-flex;
     position: absolute;
-    font-size: 40px;
 }
-.nav-items{
-    padding: 1rem;
-    float: left;
-}
-.nav-items:hover{
-    border: 5px solid black;
-}
-
-.nav-list a{
-    color:black;
+article{
+    width: 256px;
+    background-color: green;
+    height: 100%;
+    border-right: 10px solid black;
 }
 .menu{
-    position: absolute;
-    margin-top:0;
     list-style-type: none;
-    font-size: 2rem;
-    width: 30rem;
     padding: 0;
-    border: 1px dashed red;
+    margin: 0;
+    display: block;
+    font-size: 25px;
 }
-.menu li{
-    border-bottom: 10px solid black;
-    margin-top: -10px;
-    border-width: 100%;
-    text-align: center;
-    margin-left: -10rem;
+.menu p{
+    border-bottom: 10px solid black ;
+    padding-bottom: 25px;
 }
-.secondary{
-    right: 0rem;
-}
-.main-menu{
-    background-color: green;
-    height: 42rem;
-    width: 30rem; 
-    display: inline-block; 
-    margin-left: 10px;
+.menu-bars{
     position: absolute;
-    margin-top: 0;
+    top: 7%;
+    left: 13px;
+    font-size: 35px;
+    color: transparent;
 }
-#main-menu-control:checked ~ .main-menu{
-    left:-18rem;
+#main-menu-control:checked ~ section{   
+    width: calc(100% - 256px * 2 - 20px + 200px)
 }
-#main-menu-control:checked ~ .main-section{
-    width: calc(56.9rem + 19rem - 8px);
-    left:-18rem;
+#main-menu-control:checked ~ article{
+    width: 56px;
 }
-.secondary-menu{
-    background-color: purple;
-    height: 42rem;
-    width: 30rem;
-    display: inline-block;
-    margin-left: calc(56rem + 30rem + 40px);
-    position: absolute;
+#main-menu-control:checked ~ article .main-menu li .menu-bars{
+    color: black;
 }
-.main-section{
-    background-color: whitesmoke; 
-    height: 42rem; 
-    width: 56.9rem; 
-    margin-left: calc(30rem + 18px); 
-    overflow-x: hidden;
+#main-menu-control:checked ~ article .main-menu li p{
+    display: none;
+}
+section{
+    width: calc(100% - 256px * 2 - 20px);
+    height: 100%;
+    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+    border-right:10px solid black ;
     overflow-y: scroll;
-    position: absolute;
-    float: left;
-    scroll-snap-type: mandatory;
-    z-index: 5;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 20px;
 }
-h1.main-text{
-    font-size: 50px; 
-    margin-left: 1rem; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+aside{
+    width: 256px;
+    background-color: purple;
+    height: 100%;
 }
-footer.copy-right{
-    background-color: blue; 
-    height: 10rem; 
-    width: 1900px;
-    position: absolute;
-    margin-top: calc(10px + 42rem);
+footer{
+    height: 20vh;
+    top: calc(60vh + 10px);
+    width: calc(100% -20px);
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
 }

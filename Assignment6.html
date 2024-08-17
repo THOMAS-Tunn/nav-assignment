@@ -1,76 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Assignment6.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assignment6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <title>Document</title>
-  </head>
-  <body
-    style="
-      overflow: hidden;
-      width: fit-content;
-      height: 1060px;
-      background-color: black;
-    "
-  >
-    <header
-      style="
-        background-color: yellow;
-        height: 13rem;
-        width: 1900px;
-        border-bottom: 10px solid black;
-      "
-    >
-      <nav>
-        <a href="#home" class="button logo">Logo</a>
-        <ul class="nav-list">
-          <li class="nav-items">
-            <a href="#home">Home</a>
-          </li>
-          <li class="nav-items">
-            <a href="#about">About</a>
-          </li>
-          <li class="nav-items">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-        <a href="#logout" class="button logout">Logout</a>
-      </nav>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <button class="button logo"><a href="#Home">Logo</a></button>
+            <ul class="main-nav">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <button class="button logout"><a href="#Logout">Logout</a></button>
+        </nav>
     </header>
     <main>
-      <input type="checkbox" id="main-menu-control" style="display: none" />
-      <article class="main-menu">
-        <ul class="menu">
-          <li style="margin-left: -5rem">
-            <label for="main-menu-control"
-              ><p style="font-weight: bold">
-                Main menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
-                  class="fa-solid fa-bars"
-                ></i></p
-            ></label>
-          </li>
-          <li><p>Main menu 1</p></li>
-          <li><p>Menu item 2</p></li>
-          <li><p>Menu item 2</p></li>
-          <li><p>Menu item 3</p></li>
-          <li><p>Menu item 4</p></li>
-        </ul>
-      </article>
-      <section class="main-section">
-        <section
-          style="
-            margin-left: 1rem;
-            font-size: 30px;
-            font-family: 'Times New Roman';
-            margin-top: 0;
-          "
-        >
-          <h1 class="main-text">My Todo items:</h1>
+        <input type="checkbox" id="main-menu-control" style="display: none;">
+        <article>
+            <ul class="menu main-menu">
+                <li><label for="main-menu-control"><i class="fa-solid fa-bars menu-bars"></i></label></li>
+                <li>
+                    <label for="main-menu-control"><p style="font-size: 35px; font-weight: bold;">Main menu&nbsp;&nbsp;<i class="fa-solid fa-bars"></i></p></label>
+                </li>
+                <li>
+                    <p>Menu item 1</p>
+                </li>
+                <li>
+                    <p>Menu item 2</p>
+                </li>
+                <li>
+                    <p>Menu item 2</p>
+                </li>
+                <li>
+                    <p>Menu item 3</p>
+                </li>
+                <li>
+                    <p>Menu item 4</p>
+                </li>
+            </ul>
+        </article>
+        <section>
+            <h1 style="font-size: 50px;">My Todo items:</h1>
           <b>List of avaiable courses</b>
           <ul style="list-style-type: disc">
             <li>Data Structures & Algorithm</li>
@@ -102,26 +78,25 @@
             <li>Graphs</li>
           </ol>
         </section>
-      </section>
-      <aside class="secondary-menu">
-        <ul class="menu secondary">
-          <li><p style="font-weight: bold">secondary menu</p></li>
-          <li><p>Menu item 1</p></li>
-          <li><p>Menu item 2</p></li>
-          <li><p>Menu item 3</p></li>
-        </ul>
-      </aside>
+        <aside>
+            <ul class="menu">
+                <li>
+                    <p>Secondary menu</p>
+                </li>
+                <li>
+                    <p>Menu item 1</p>
+                </li>
+                <li>
+                    <p>Menu item 2</p>
+                </li>
+                <li>
+                    <p>Menu item 3</p>
+                </li>
+            </ul>
+        </aside>
     </main>
-    <footer class="copy-right">
-      <b
-        style="
-          font-size: 50px;
-          position: relative;
-          left: calc(1900px / 2.4);
-          top: 30%;
-        "
-        >&copy copyright</b
-      >
+    <footer>
+        <p style="font-size: 50px; font-weight: bold;">Copyright&copy;</p>
     </footer>
-  </body>
+</body>
 </html>
