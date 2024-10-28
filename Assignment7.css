@@ -1,0 +1,77 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: cornflowerblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.login-tab{
+    height: 600px;
+    width: 500px;
+    background-color: white;
+    position: relative;
+    top:50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.label-user-log{
+    display: block;
+    font-weight: 500;
+}
+#passwrd, #us-name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 410px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+#passwrd:invalid{
+    border-color: #ff4d4f;
+    border-style: solid;
+    border-width:1px ;
+    border-radius: 5px;
+    outline:none;
+    margin-bottom: 0;
+}
+.pw-invalid{
+    display: none;
+    color: #ff4d4f;
+    position: relative;
+}
+#passwrd:invalid + .pw-invalid{
+    display: block;
+}
+.fa-eye-slash{
+    position: absolute;
+    translate: 390px -35.5px;
+    cursor: pointer;
+    color: rgba(0,0,0,.5);
+}
+#passwrd:invalid ~ .fa-eye-slash{
+    translate: 390px -50px;
+}
+.forgot-pw{
+    float: right;
+    color: black;
+}
+.enter-btn{
+    display: block;
+    margin-top: 40px;
+    height: 40px;
+    width: 100%;
+    border: transparent;
+    border-radius: 10px;
+    background-color: #078380;
+    transition: background-color .5s ease-in-out;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.enter-btn:hover{
+    background-color: #1e8f89;
+}
