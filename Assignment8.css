@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(220,220,220);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main-part{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: white;
+    padding: 100px;
+    border-radius: 10px;
+}
+.fa-regular{
+    color: rgb(2, 104, 37);
+    font-size: 25px;
+    margin: 20px;
+    translate: 0% -8px;
+}
+
+div.calend-holder{
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    background-color: rgba(16, 216, 156,.3);
+    border-radius: 50%;
+}
+
+h1, p{
+    justify-self: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+table, tr, td {
+    padding: 5px;
+    border-spacing: 20px;
+    text-align: left;
+}
+table{
+    border-radius: 10px;
+}
+td{
+    border-radius: 5px;
+    width: 300px;
+    border: 1px solid rgba(0,0,0,.5);
+}
+
+input{
+    font-size: 16px;
+    border: none;
+    /* height:100%; */
+    width: calc(100% - 8px);
+    outline: none;
+}
+
+select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+.prac-choice{
+    background-color: rgba(70,70,70,.1);
+}
+
+.prac-opt{
+    pointer-events:none;
+    background-color: transparent;
+    color: rgba(70,70,70,.7);
+}
+
+.service-choice:has(option:not([disabled]):checked) + td select.prac-opt, .service-choice:has(option:not([disabled]):checked) + td.prac-choice{
+    pointer-events: auto;
+    color: black;
+    background-color: white;
+}
+
+.date-choice{
+    background-color: rgba(70,70,70,.1);
+}
+
+.date-opt{
+    pointer-events: none;
+    background-color: transparent;
+}
+
+tr.ser-prac-choose:has(.prac-choice option:not([disabled]):checked) ~ tr.date-time-choose .date-choice .date-opt{
+    pointer-events: auto;
+}
+
+tr.ser-prac-choose:has(.prac-choice option:not([disabled]):checked) ~ tr.date-time-choose .date-choice{
+    background-color: white;
+}
+
+.time-opt{
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    background-color: transparent;
+    color: rgba(70,70,70,.7);
+}
+
+.time-choice{
+    background-color: rgba(70,70,70,.1);
+}
+
+.date-choice:has(input:not(:invalid)) + .time-choice .time-opt{
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.date-choice:has(input:not(:invalid)) + .time-choice{
+    background-color: white;
+}
+
+.sub-btn{
+    float: right;
+    height: 50px;
+    width: 200px;
+    border: 1px solid rgba(0,0,0,.5);
+    border-radius: 10px;
+    background-color: rgba(70,70,70,.1);
+    color: rgba(10,10,10,.5);
+    transition: .5s linear;
+    pointer-events: none;
+    margin-right: 24px;
+}
+
+table:has(.date-time-choose .time-choice input:not(:invalid)) + .sub-btn{
+    background-color: rgb(144, 239, 177);
+    color: black;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+td:has(.cal-wrap){
+    position: relative;
+}
+
+.cal-wrap{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    right:24px;
+    bottom: 14px
+}
+
+.fa-regular.fa-calendar{
+    font-size: 15px;
+    color: rgba(70,70,70,.7);
+}
+
+tr.ser-prac-choose:has(.prac-choice option:not([disabled]):checked) ~ tr.date-time-choose .date-choice div .fa-regular.fa-calendar{
+    color:black;
+}
+
+td:has(input[type="tel"]){
+    display: flex;
+    width: 308px;
+    padding: 0;
+}
+
+td:has(input[type="tel"]) input{
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.pre-tel-input{
+    background-color: rgba(160,160,160,.1);
+    border: 1px solid rgba(200,200,200);
+    padding: 5px;
+}
+
+.date-opt:focus + div{
+    display: none;
+}
+

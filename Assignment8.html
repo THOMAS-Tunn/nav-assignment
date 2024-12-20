@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assignment8.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+    <section class="main-part">
+        <div class="calend-holder"><i class="fa-regular fa-calendar-check"></i></div>
+        <h1>Request an Appointment</h1>
+        <p>Fill in your details to book an appointment with jimmy Healthcare</p>
+        <form action="#">
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+                <tr>
+                    <td><input type="text" pattern="[A-Za-z].{2,}" placeholder="Enter your first name" title="Please type atleast three character" required></td>
+                    <td><input type="text" pattern="[A-Za-z].{2,}" placeholder="Enter your last name" title="Please type atleast three character" required></td>
+                </tr>
+                <tr>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
+                </tr>
+                <tr>
+                    <td><input type="email" placeholder="Enter your email address"></td>
+                    <td>
+                        <span class="pre-tel-input">+1</span>
+                        <input type="tel" placeholder="Enter your phone number" title="+(123) 123 345 6789">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Select Service</th>
+                    <th>Select Practitioner</th>
+                </tr>
+                <tr class="ser-prac-choose">
+                    <td class="service-choice">
+                        <select class="service-opt" name="service-choice">
+                            <option value="0" disabled selected>Select service</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                    </select>
+                    </td>
+                    <td class="prac-choice">
+                        <select class="prac-opt" name="prac-choice">
+                            <option value="0" disabled selected>Select practitioner</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Select Date</th>
+                    <th>Select Time</th>
+                </tr>
+                <tr class="date-time-choose">
+                    <td class="date-choice">
+                        <input class="date-opt" type="text" placeholder="Select date" onfocus="this.type='date'" onblur="this.type='text'" name="date-opt" required>
+                        <div class="cal-wrap"><i class="fa-regular fa-calendar"></i></div>
+                    </td>
+                    <td class="time-choice">
+                        <select class="time-opt" name="time-choice">
+                            <option value="0" disabled selected>Select time</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <button class="sub-btn">Request Appointment</button>
+        </form>
+    </section>
+</body>
+</html>
